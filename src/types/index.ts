@@ -30,6 +30,6 @@ export interface SavingsData {
   targetDate: Date;
 }
 
-export const TARGET_AMOUNT = 13380.93;
+export const TARGET_AMOUNT = 20000;
 export const TARGET_DATE = new Date(2025, 11, 31); // December 31, 2025
 export const USER_ID_STORAGE_KEY = "saved_user_id";

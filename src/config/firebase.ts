@@ -32,7 +32,9 @@ if (missingVars.length > 0) {
     console.error(`${varName}=your_value_here`);
   });
   throw new Error(
-    `Firebase configuration is incomplete. Missing: ${missingVars.join(", ")}. Please create a .env file with all required Firebase credentials.`
+    `Firebase configuration is incomplete. Missing: ${missingVars.join(
+      ", "
+    )}. Please create a .env file with all required Firebase credentials.`
   );
 }
 
@@ -44,7 +46,9 @@ if (invalidEntries.length > 0) {
   const invalidKeys = invalidEntries.map(([key]) => key);
   console.error("Firebase configuration has undefined values:", invalidKeys);
   throw new Error(
-    `Firebase configuration error. The following values are undefined: ${invalidKeys.join(", ")}. Please check your .env file.`
+    `Firebase configuration error. The following values are undefined: ${invalidKeys.join(
+      ", "
+    )}. Please check your .env file.`
   );
 }
 
