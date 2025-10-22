@@ -1,5 +1,7 @@
-<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="72" height="72" rx="9" fill="#667eea"/>
-  <rect x="9" y="9" width="54" height="54" rx="6" fill="#764ba2"/>
-  <text x="36" y="45" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">T</text>
-</svg>
+
+    <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+      <rect width="72" height="72" fill="#667eea"/>
+      <rect x="9" y="9" width="54" height="54" rx="3" fill="#764ba2"/>
+      <text x="36" y="46" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">T</text>
+    </svg>
+  

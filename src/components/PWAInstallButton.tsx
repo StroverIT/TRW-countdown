@@ -53,6 +53,7 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({
     setIsInstalling(true);
     try {
       const success = await pwaService.promptInstall();
+      console.log("success", success);
       if (success) {
         setIsInstalled(true);
         setCanInstall(false);

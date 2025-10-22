@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:pwa": "npm run build && npm run generate-icons && npm run copy-pwa-assets",
+    "build:pwa": "npm run build && npm run generate-icons && npm run fix-icons && npm run copy-pwa-assets",
     "generate-icons": "node scripts/generate-icons.js",
+    "fix-icons": "node scripts/fix-icons.js",
     "copy-pwa-assets": "cp -r public/icons dist/ && cp public/manifest.json dist/ && cp public/sw.js dist/",
     "lint": "eslint .",
     "preview": "vite preview",
