@@ -6,8 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:pwa": "npm run build && npm run generate-icons && npm run copy-pwa-assets",
+    "generate-icons": "node scripts/generate-icons.js",
+    "copy-pwa-assets": "cp -r public/icons dist/ && cp public/manifest.json dist/ && cp public/sw.js dist/",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview --host",
+    "vercel-build": "npm run build:pwa"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.15",

@@ -3,6 +3,7 @@ import { useTransactions } from "../hooks/useTransactions";
 import { useUserID } from "../hooks/useUserID";
 import { TransactionRow } from "./TransactionRow";
 import { AddTransactionView } from "./AddTransactionView";
+import { PWAInstallButton } from "./PWAInstallButton";
 import { formatCurrency } from "../utils/calculations";
 import {
   FaExclamationTriangle,
@@ -169,6 +170,7 @@ export const ContentView: React.FC<ContentViewProps> = ({ onUserIdChange }) => {
               <p className="text-white/80 text-sm">User: {userId}</p>
             </div>
             <div className="flex items-center gap-2">
+              <PWAInstallButton className="hidden sm:flex" />
               <button
                 onClick={toggleTransparency}
                 className="text-white/80 hover:text-white text-sm hidden sm:inline-flex"
